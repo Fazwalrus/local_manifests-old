@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="lineageos"
+        fetch="https://github.com/LineageOS/" revision="lineage-21" />
+    <remote name="muppets"
+        fetch="https://github.com/TheMuppets/" revision="lineage-21" />
+    <remote name="fazwalrus"
+        fetch="https://github.com/Fazwalrus/" revision="lineage-21" />
+    <remote name="reza"
+        fetch="https://github.com/DelightReza/" revision="lineage-21" />
+    <remote name="raza-droid"
+        fetch="https://github.com/RazaDroidProject" revision="lineage-21" />
+    <remote name="moto-guamp"
+        fetch="https://github.com/moto-guamp/" revision="lineage-21" />
+    
+
+    <!-- Device Trees -->
+    <project path="device/motorola/sm6225-common" name="android_device_motorola_sm6225-common"
+        remote="lineageos"/>
+    <project path="device/motorola/borneo" name="android_device_motorola_borneo"
+        remote="lineageos"/>
+
+    <!-- Kernel Trees -->
+    <project path="kernel/motorola/sm6225" name="android_kernel_motorola_sm6225"
+        remote="lineageos"/>
+    
+    <!-- Vendor Trees -->
+    <project path="vendor/motorola/sm6225-common" name="proprietary_vendor_motorola_sm6225-common"
+        remote="muppets"/>
+    <project path="vendor/motorola/borneo" name="proprietary_vendor_motorola_borneo"
+        remote="muppets"/>
+        
+    <!-- Supporting Repos -->
+    <project path="hardware/motorola" name="android_hardware_motorola"
+        remote="lineageos"/>
+    <!--project path="system/qcom" name="android_system_qcom" remote="lineageos" revision="lineage-21"  /-->
+</manifest>
